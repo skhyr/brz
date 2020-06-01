@@ -20,4 +20,8 @@ function replaceText (node) {
   node.nodeValue = value;
 }
 
+window.onload = findAndReplace();
 window.addEventListener("change", findAndReplace());
+setTimeout(() => {
+    findAndReplace();
+}, 1000);
